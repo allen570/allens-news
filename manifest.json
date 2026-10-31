@@ -1,0 +1,22 @@
+{
+  "name": "Allen's News",
+  "short_name": "Allen's News",
+  "description": "Custom news aggregation and briefings for geopolitics, markets, Iran, and business.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0f0f0f",
+  "theme_color": "#1a1a1a",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

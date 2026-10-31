@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#1a1a1a">
+  <title>Allen's News</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+  <link rel="apple-touch-icon" href="icon-192.png">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Allen's News</h1>
+      <div class="subtitle">Briefings · Monitoring · Direct</div>
+    </header>
+
+    <div class="categories" id="categories">
+      <button class="cat-btn active" data-cat="all">All</button>
+      <button class="cat-btn" data-cat="iran">Iran / ME</button>
+      <button class="cat-btn" data-cat="markets">Markets</button>
+      <button class="cat-btn" data-cat="geopolitics">Geopolitics</button>
+      <button class="cat-btn" data-cat="business">Business</button>
+    </div>
+
+    <div id="home" class="section active">
+      <div class="feed" id="feed"></div>
+    </div>
+
+    <div id="briefing" class="section">
+      <div class="briefing">
+        <h2>Daily Briefing</h2>
+        <div id="brief-content"></div>
+      </div>
+    </div>
+
+    <div id="monitor" class="section">
+      <div class="monitor">
+        <h2 style="margin-bottom:16px;font-size:20px;">Monitoring</h2>
+        <div class="monitor-item">
+          <span class="topic">Trump / White House</span>
+          <span class="badge">Active</span>
+        </div>
+        <div class="monitor-item">
+          <span class="topic">Iran Opposition</span>
+          <span class="badge">Active</span>
+        </div>
+        <div class="monitor-item">
+          <span class="topic">Hormuz / Energy</span>
+          <span class="badge">Active</span>
+        </div>
+        <div class="monitor-item">
+          <span class="topic">AI / Tech Spend</span>
+          <span class="badge">Watch</span>
+        </div>
+        <div class="monitor-item">
+          <span class="topic">Poirier</span>
+          <span class="badge">Active</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="saved" class="section">
+      <div class="empty">No saved items yet.</div>
+    </div>
+
+    <nav class="nav">
+      <button class="nav-btn active" data-section="home">
+        <span class="icon">⌂</span>
+        Home
+      </button>
+      <button class="nav-btn" data-section="briefing">
+        <span class="icon">☰</span>
+        Briefing
+      </button>
+      <button class="nav-btn" data-section="monitor">
+        <span class="icon">◉</span>
+        Monitor
+      </button>
+      <button class="nav-btn" data-section="saved">
+        <span class="icon">☆</span>
+        Saved
+      </button>
+    </nav>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
